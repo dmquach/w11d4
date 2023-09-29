@@ -55,4 +55,8 @@ class Pokemon < ApplicationRecord
     has_many :items,
         dependent: :destroy
 
+    def default_url
+        return "/images/unknown.png"
+    end
+
 end
